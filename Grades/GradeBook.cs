@@ -13,10 +13,12 @@ namespace Grades
             grades = new List<float>();
         }
 
+        public string Name;
+
         public GradeStatistics ComputeStatistics()
         {
             GradeStatistics stats = new GradeStatistics();
-
+            
             float sum = 0;
             foreach (float grade in grades)
             {
